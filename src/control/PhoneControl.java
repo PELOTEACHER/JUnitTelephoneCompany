@@ -21,8 +21,8 @@ public class PhoneControl  {
         return Validator.checkDate(startTime) + Validator.checkDuration(duration);
     }
     
-    public String getCalculatedCall(String date, String duration) throws IllegalArgumentException {
-        return pc_Calculator.getCalculatedCall(date, duration);
+    public String getCalculatedCall(String startTime, String duration) throws IllegalArgumentException {
+        return pc_Calculator.getCalculatedCall(startTime, duration);
     }
     
     public String getRandomStartTime(){
